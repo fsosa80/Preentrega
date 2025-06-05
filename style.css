@@ -1,0 +1,137 @@
+:root {
+  --color-primario: #1a73e8;
+  --color-secundario: #68650b;
+  --color-acento: #e8f0fe;
+  --color-fondo: #f5f5f5;
+  --color-texto: #333;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--color-fondo);
+  color: var(--color-texto);
+}
+
+/* header {
+  background-color: var(--color-primario);
+  color: white;
+  padding: 1rem;
+  text-align: center;
+} */
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--color-primario);
+  color: white;
+  padding: 1rem;
+}
+
+header img, header h1 {
+  margin: 0.5rem;
+}
+
+header > div {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+nav {
+  background-color: var(--color-secundario);
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 0.8rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+}
+.hero {
+    text-align: center;
+    padding: 4em 2em;
+    background: #eab98e;
+  }
+.mero {
+    text-align: center;
+    padding: 4em 2em;
+    background: #e8a65f;
+  }
+.contacto
+{
+    text-align: left;
+    padding: 4em 2em;
+    background: #f0deed;
+    border-radius: 8px;
+  }
+section {
+  background-color: rgb(237, 204, 169);
+  padding: 1.5rem;
+  border-radius: 0px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.map-container {
+  display: flex;
+  background-color: rgb(230, 209, 227);
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+iframe {
+  border: 20;
+  width: 100%;
+  max-width: 600px;
+  height: 300px;
+  border-radius: 8px;
+}
+  input, textarea {
+    padding: 0.75em;
+    border: 1px solid #2d387d;
+    border-radius: 4px;
+  }
+  
+  button {
+    padding: 0.75em;
+    background: hwb(232 35% 57%);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+.tarjetas {
+  display: flex;
+  flex-wrap: wrap; 
+  gap: 1.5rem;
+  justify-content: center;
+}
+.tarjeta {
+  background-color: rgb(145, 193, 155);
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  padding: 1rem;
+  width: 250px;
+  text-align: center;
+}  
+footer {
+  background-color: var(--color-primario);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: auto;
+}
